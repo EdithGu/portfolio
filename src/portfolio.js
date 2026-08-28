@@ -305,7 +305,7 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle: "Discuss a project or just want to say hi? My inbox is open for all.",
   number: "", // Intentionally left blank — a public site shouldn't list a phone number; add one only if you're comfortable with that being public
-  email_address: isYadiguDomain ? "xxx" : "edithg3120@gmail.com" // TODO: replace "xxx" with the real inbox for the yadigu domain
+  email_address: isYadiguDomain ? "yag3120@gmail.com" : "edithg3120@gmail.com"
 };
 
 // Twitter Section
