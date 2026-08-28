@@ -1,0 +1,78 @@
+@import "../../_globalColor";
+
+.prof-title {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.location-div {
+  text-shadow: $githubProfileCardLocationTS;
+}
+
+.opp-div {
+  padding-bottom: 1rem;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.main-content-profile {
+  flex: 100%;
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.desc-prof a {
+  color: $buttonColor;
+  text-decoration: none;
+}
+
+.desc-prof a:hover {
+  text-decoration: underline;
+}
+
+.bio-text {
+  line-height: 30px;
+  font-size: 22px;
+}
+
+.desc-prof {
+  line-height: 45px;
+  font-size: 19px;
+}
+
+.subTitle {
+  color: $subTitle;
+}
+
+@media (max-width: 768px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-content-profile {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .bio-text {
+    font-size: 16px;
+  }
+
+  .desc-prof {
+    line-height: 30px;
+    font-size: 16px;
+  }
+
+  .prof-title {
+    padding-bottom: 1rem;
+    font-size: 32px;
+    text-align: center;
+  }
+}

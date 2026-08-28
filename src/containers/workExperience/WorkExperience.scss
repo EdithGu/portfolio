@@ -1,0 +1,151 @@
+@import "../../_globalColor";
+
+.experience-heading {
+  font-size: 56px;
+  font-weight: 400;
+}
+
+.experience-heading.dark-mode {
+  color: $textColorDark;
+}
+
+.experience-container {
+  position: relative;
+  display: block;
+  width: 90%;
+  padding: 20px 10px 20px 6%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  overflow: hidden;
+}
+
+.experience-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 26%;
+  height: 100%;
+  background-image: radial-gradient(circle, $buttonColor 1.5px, transparent 1.5px);
+  background-size: 28px 28px;
+  opacity: 0.12;
+  pointer-events: none;
+}
+
+@media (max-width: 1000px) {
+  .experience-container::before {
+    display: none;
+  }
+}
+
+.timeline {
+  position: relative;
+  margin-top: 2.5rem;
+  padding-left: 36px;
+  border-left: 3px solid $educationCardBorder;
+}
+
+.timeline.dark-mode {
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 2.4rem;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -43px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: $buttonColor;
+  box-shadow: 0 0 0 5px rgba(85, 25, 139, 0.15);
+}
+
+.timeline-date {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $buttonColor;
+}
+
+.timeline.dark-mode .timeline-date {
+  color: #b98cf0;
+}
+
+.timeline-role {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 6px 0 8px;
+  color: $titleColor;
+}
+
+.timeline.dark-mode .timeline-role {
+  color: $textColorDark;
+}
+
+.timeline-at {
+  color: $subTitle;
+  font-weight: 400;
+}
+
+.timeline-desc {
+  font-size: 17px;
+  line-height: 1.65;
+  color: $cardSubtitle;
+  margin: 0 0 14px;
+  max-width: 75ch;
+}
+
+.timeline.dark-mode .timeline-desc {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.timeline-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.timeline-chip {
+  font-size: 13.5px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(85, 25, 139, 0.08);
+  color: $buttonColor;
+  border: 1px solid rgba(85, 25, 139, 0.2);
+}
+
+.timeline.dark-mode .timeline-chip {
+  background: rgba(185, 140, 240, 0.12);
+  color: #b98cf0;
+  border: 1px solid rgba(185, 140, 240, 0.3);
+}
+
+/* Media Query */
+
+@media (max-width: 1380px) {
+  .experience-heading {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .experience-container {
+    width: 100%;
+  }
+}
