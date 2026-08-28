@@ -8,9 +8,10 @@
 }
 .greet-main {
   width: 90%;
-  padding: 20px 10px;
+  /* padding-top (not margin-top) so it doesn't collapse through the
+     .dark-mode wrapper and expose the page background above the header */
+  padding: 132px 10px 20px;
   margin: 0px auto;
-  margin-top: 132px; /* clears the fixed .header (~100px) plus original 2rem gap */
 }
 
 .subTitle {
@@ -31,10 +32,6 @@
 
 .greeting-text-div {
   max-width: 720px;
-}
-
-.empty-div {
-  margin-bottom: 40px;
 }
 
 .greeting-text {

@@ -14,7 +14,6 @@ export default function Skills() {
   }
   return (
     <div className={isDark ? "dark-mode main" : "main"} id="skills">
-      <div id="resume" className="empty-div"></div>
       <div className="skills-main-div">
         <div className="skills-image-div">
           {illustration.animated ? (
@@ -59,7 +58,7 @@ export default function Skills() {
             })}
           </div>
           {greeting.resumeLink && (
-            <div className="resume-link-div">
+            <div className="resume-link-div" id="resume">
               <Button text="View my resume" href="/resume.html" newTab />
             </div>
           )}
